@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@600&family=Lato:ital,wght@1,400;1,700&family=Mulish&family=Noto+Sans&family=Orbitron:wght@600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Work+Sans:ital,wght@0,300;0,500;1,600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+
+body{
+    background-color: #d7d7d7;
+    overflow-x: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:40px 20px 0 20px;
+
+}
+.container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+
+}
+
+ .container .heading h3{
+
+    font-size: 3rem;
+    font-weight: bolder;
+    border-bottom: 4px solid gray; 
+
+}
+
+.container .heading h3 span{
+    font-weight:100;
+    color: #505050;
+}
+
+.container .box{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    /* align-items: center; */
+
+}
+
+.container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+
+}
+.container .box .dream img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+
+}
+
+.container .box .dream img:hover{
+    transform: scale(1.1);
+}
+
+
+.container .btn{
+    margin: 40px 0px 70px 0px;
+   background-color: #222;
+   padding: 20px 50px;
+   border-radius: 8px ;
+
+}
+
+.container .btn a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+
+@media only screen and (max-width:769px){
+    .container .box{
+       
+        flex-direction:column;
+        
+    }
+    .container .box .dream{
+        width: 100%;
+    }
+
+
+    .container .heading{
+        width: 100%;
+        padding-bottom: 50px;
+    
+    }
+    
+     .container .heading h3{
+    
+        font-size: 2rem;
+      
+    
+    }
+
+}
+
